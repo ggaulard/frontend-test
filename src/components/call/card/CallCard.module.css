@@ -1,0 +1,46 @@
+.card {
+  border: 1px solid var(--border);
+  margin-bottom: -1px;
+  justify-content: start;
+  align-items: center;
+}
+
+.card:hover {
+  background-color: var(--gray-light);
+}
+
+.card.active,
+.card.active:hover {
+  background-color: var(--primary-light);
+}
+
+.card.active *,
+.card.active:hover * {
+  color: white !important;
+}
+
+.card.archived,
+.card.archived:hover {
+  background-color: var(--gray-light);
+  opacity: 0.4;
+}
+
+.card.archived.active,
+.card.archived.active:hover {
+  background-color: var(--primary-light);
+  opacity: 1;
+  color: white !important;
+}
+
+.card .icon {
+  opacity: 0;
+  margin-right: 10px;
+}
+
+.card:hover .icon {
+  opacity: 1;
+}
+
+.steps:hover {
+  cursor: pointer;
+}
